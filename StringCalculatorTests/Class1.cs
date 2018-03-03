@@ -22,8 +22,21 @@ namespace StringCalculatorTests
                 //Act-
                 var result = numberAdder.AddNumbers(number);
                 //Assert-
-                Assert.AreEqual("0", result);
+                Assert.AreEqual(0, result);
             }
+        }
+
+        [Test]
+        public void
+            Entering_one_number_returnss_the_same_numer()
+        { 
+            //Arrange -
+            var number = "1";
+            var numberAdder = new NumberAdder();
+            //Act-
+            var result = numberAdder.AddNumbers(number);
+            //Assert-
+            Assert.AreEqual(1, result);
         }
     }
 

@@ -13,16 +13,20 @@ namespace StringCalculator
 
         }
 
-        public string AddNumbers(string number)
+        public int AddNumbers(string number)
         {
             var total = number;
-            //var total = int.Parse(number);
+
+
             if (total == "")
             {
-                number = "0";
-                return number;
+                return 0;
             }
-            return "Stupid";
+            else
+            {
+                var actualnumber = int.Parse(number);
+                return actualnumber;
+            }
         }
 //        int number = Convert.ToInt32(originalString);
 //        number += 1;
