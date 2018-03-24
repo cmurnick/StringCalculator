@@ -38,6 +38,18 @@ namespace StringCalculatorTests
             //Assert-
             Assert.AreEqual(1, result);
         }
+
+        [Test]
+        public void Entering_multiple_numbers_and_have_them_all_add()
+        {
+            //Arrange -
+            var number = "2,3,4";
+            var numberAdder = new NumberAdder();
+            //Act-
+            var result = numberAdder.AddNumbers(number);
+            //Assert-
+            Assert.AreEqual(9, result);
+        }
     }
 
 

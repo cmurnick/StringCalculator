@@ -17,14 +17,19 @@ namespace StringCalculator
         {
             var total = number;
 
-
             if (total == "")
             {
                 return 0;
             }
             else
             {
+                
                 var actualnumber = int.Parse(number);
+               
+                for (var i = 0; i < actualnumber.length(); i++)
+                {
+
+                }
                 return actualnumber;
             }
         }
